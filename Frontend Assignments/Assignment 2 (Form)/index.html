@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - Personal Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <!-- Parent Fieldset -->
+      <fieldset class="parent-fieldset">
+        <legend>Personal Data</legend>
+
+        <!-- Child Fieldset -->
+        <fieldset class="child-fieldset">
+          <legend>Your Name</legend>
+          <label for="first-name"><span>first name</span>:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="ex.Ibrahim"
+          />
+          <br />
+          <label for="second-name"><span>second name</span>:</label>
+          <input
+            type="text"
+            id="second-name"
+            name="second-name"
+            placeholder="ex.Abdelnaby"
+          />
+        </fieldset>
+        <!-- Private Info -->
+        <div class="private-info">
+          <!-- Phone -->
+          <label for="phone"><span>your phone</span>:</label>
+          <input type="tel" id="phone" name="phone" />
+          <br />
+          <!-- Email -->
+          <label for="email"><span>Email</span>:</label>
+          <input type="email" id="email" name="email" />
+          <br />
+          <!-- Password -->
+          <label for="password"><span>password</span>:</label>
+          <input type="password" id="password" name="password" />
+          <br />
+          <!-- Re-Password -->
+          <label for="re-password"><span>password</span>:</label>
+          <input type="password" id="re-password" name="re-password" />
+        </div>
+        <!-- Gender Info -->
+        <div class="gender-info">
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <br />
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+        </div>
+        <!-- Education Info" -->
+        <div class="education-info">
+          <input type="checkbox" name="education" id="student" />
+          <label for="student">Student</label>
+          <br />
+          <input type="checkbox" name="education" id="graduated" />
+          <label for="graduated">Graduated</label>
+          <br />
+          <br />
+          <select name="university" id="university-options">
+            <optgroup label="Alex">
+              <option value="AUC">Alexandria Univercity</option>
+            </optgroup>
+            <optgroup label="Cairo">
+              <option value="AUC">Cairo University</option>
+              <option value="AUC">Ain-Shams University</option>
+            </optgroup>
+          </select>
+        </div>
+        <input
+          class="submit-button"
+          type="image"
+          src="/submit-button.png"
+          alt="Submit Button"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>

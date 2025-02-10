@@ -1,0 +1,55 @@
+fieldset {
+  border: 1px solid gray;
+}
+.parent-fieldset {
+  background-color: #d12222;
+  height: 95vh;
+}
+legend {
+  background-color: #349dff;
+}
+/* child fieldset */
+.child-fieldset {
+  background-color: #f5bf10;
+  margin: 20px 0 50px;
+}
+.child-fieldset legend {
+  padding: 40px 0;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.child-fieldset label {
+  margin-right: 10px;
+}
+.child-fieldset label span {
+  display: inline-block;
+  width: 100px;
+}
+/* private-info */
+.private-info {
+  margin-bottom: 40px;
+}
+.private-info label {
+  margin-right: 10px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.private-info label span {
+  display: inline-block;
+  width: 100px;
+}
+/* Gender Info */
+.gender-info {
+  margin-bottom: 40px;
+}
+/* Education Info */
+.education-info select {
+  border: none !important;
+  outline: none !important;
+}
+/* Submit Button */
+.submit-button {
+  width: 80px;
+  margin-left: -4px;
+}
