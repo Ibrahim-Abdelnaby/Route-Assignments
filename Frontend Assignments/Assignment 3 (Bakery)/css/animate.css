@@ -1,0 +1,25 @@
+#hero .scroll-border {
+  width: 40px;
+  height: 63px;
+  margin: 170px auto;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+}
+#hero .scroll-border .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 10% auto;
+  animation: circle 2s ease-out infinite;
+}
+@keyframes circle {
+  0% {
+    margin: 10% auto;
+    opacity: 1;
+  }
+  100% {
+    margin: 95% auto;
+    opacity: 0;
+  }
+}
