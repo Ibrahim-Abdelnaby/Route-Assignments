@@ -32,6 +32,12 @@ a {
 .clear-fix {
   clear: both;
 }
+.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
 /*-----------------------------------------------*/
 /* Hero Section */
 #hero {
@@ -44,15 +50,18 @@ a {
 #hero .bg-overlay {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 /* Navbar */
 #hero .header {
   padding-top: 30px;
+  background-color: rgba(34, 34, 34, 0.2);
 }
 #hero .logo {
   display: inline-block;
   vertical-align: middle;
   width: 15%;
+  padding-bottom: 25px;
 }
 #hero .menu {
   display: inline-block;
