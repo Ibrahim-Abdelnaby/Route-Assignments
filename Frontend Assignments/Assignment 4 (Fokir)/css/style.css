@@ -1,0 +1,53 @@
+/* Global Rules */
+.clear-fix {
+  clear: both;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+body {
+  font-family: sans-serif;
+  height: 1000rem;
+}
+/* Hero Section */
+#hero {
+  height: 100vh;
+  background-image: url("../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hero .bg-overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Header */
+#header {
+  padding: 23px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+#header .logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ff305b;
+  float: left;
+}
+#header .menu {
+  float: right;
+  list-style: none;
+}
+#header .menu .active {
+  color: #ff305b;
+}
+#header .menu > *:not(:last-child) {
+  float: left;
+  margin-left: 23px;
+}
+#header .menu li a {
+  text-decoration: none;
+  color: #fff;
+  /* font-weight: 500; */
+}
