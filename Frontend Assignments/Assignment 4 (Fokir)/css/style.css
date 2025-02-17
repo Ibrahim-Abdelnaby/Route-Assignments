@@ -6,6 +6,9 @@
   max-width: 1170px;
   margin: 0 auto;
 }
+a.active {
+  color: #ff305b;
+}
 body {
   font-family: sans-serif;
 }
@@ -39,9 +42,7 @@ body {
   float: right;
   list-style: none;
 }
-#header .menu .active {
-  color: #ff305b;
-}
+
 #header .menu > *:not(:last-child) {
   float: left;
   margin-left: 23px;
@@ -192,6 +193,7 @@ body {
 }
 .title h2 {
   position: relative;
+  text-align: center;
 }
 .title h2::after {
   content: "";
@@ -235,4 +237,26 @@ body {
 }
 #services .service p {
   color: #999;
+}
+/* Portfolio */
+#portfolio {
+  padding: 80px 0;
+}
+#portfolio .portfolio-nav {
+  list-style: none;
+  width: fit-content;
+  margin: 0 auto 50px;
+}
+#portfolio .portfolio-nav li {
+  float: left;
+}
+#portfolio .portfolio-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+#portfolio .portfolio-nav li a {
+  text-decoration: none;
+  color: #222;
+}
+#portfolio .portfolio-nav li .active {
+  color: #ff305b;
 }
