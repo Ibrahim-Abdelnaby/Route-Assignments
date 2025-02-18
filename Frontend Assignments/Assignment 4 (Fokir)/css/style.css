@@ -31,6 +31,7 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 #header .logo {
   font-size: 24px;
@@ -42,7 +43,9 @@ body {
   float: right;
   list-style: none;
 }
-
+#header .menu .active {
+  color: #ff305b;
+}
 #header .menu > *:not(:last-child) {
   float: left;
   margin-left: 23px;
@@ -162,7 +165,7 @@ body {
   text-decoration: none;
   color: #999;
 }
-#about button {
+button {
   background-color: #ff305b;
   border: none;
   padding: 10px 25px;
@@ -178,7 +181,7 @@ body {
 #about .about-actions > :first-child {
   margin-right: 10px;
 }
-#about button:hover {
+button:hover {
   background-color: rgb(236, 36, 3);
 }
 /* services */
@@ -258,5 +261,233 @@ body {
   color: #222;
 }
 #portfolio .portfolio-nav li .active {
+  color: #ff305b;
+}
+#portfolio .gallary .top-row {
+  margin-bottom: 20px;
+}
+#portfolio .gallary .wrap {
+  width: 33.333%;
+  float: left;
+  padding: 0 10px;
+}
+#portfolio .gallary .portfolio-item {
+  position: relative;
+  cursor: pointer;
+}
+#portfolio .gallary .portfolio-item:hover .bg-hover {
+  opacity: 1;
+}
+#portfolio .gallary .portfolio-item .bg-hover {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+#portfolio .gallary .portfolio-item .bg-hover i {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #ff305b;
+  font-size: 23px;
+}
+/* numbers */
+#numbers {
+  padding: 80px 0;
+  background-color: #f1f1f1;
+}
+#numbers .number {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+#numbers .number i {
+  font-size: 30px;
+  color: #ff305b;
+}
+#numbers .number h3 {
+  margin: 10px 0;
+  font-size: 23px;
+}
+#numbers .number p {
+  font-weight: 600;
+  color: #555555;
+}
+/* testimonials */
+#testimonials {
+  padding: 80px 0;
+}
+#testimonials .card {
+  width: 65%;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 50px 35px;
+}
+#testimonials .card .card-img {
+  float: left;
+  width: 20%;
+}
+#testimonials .card .card-info {
+  float: left;
+  width: 80%;
+}
+#testimonials .card .card-info h3 {
+  font-size: 25px;
+}
+#testimonials .card .card-info .location,
+#testimonials .card .card-info .location a {
+  color: #777777;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+#testimonials .card .card-info .location {
+  margin: 5px 0;
+}
+#testimonials .card .card-info .stars {
+  color: #f1c30d;
+}
+#testimonials .card .card-info .feedback {
+  color: #555;
+  font-style: italic;
+  margin: 10px 0;
+}
+#testimonials .card .card-img img {
+  width: 125px;
+
+  border-radius: 50%;
+}
+#testimonials .card::before {
+  content: "";
+  position: absolute;
+  background-color: #ff305b;
+  width: 300px;
+  height: 300px;
+  left: -150px;
+  bottom: 50%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+#testimonials .change {
+  margin: 20px auto 0;
+  width: 35px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #ff305b;
+  position: relative;
+}
+#testimonials .change:after {
+  content: "";
+  position: absolute;
+  right: -17px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #ff305b;
+}
+/* blog */
+#blog {
+  padding: 80px 0;
+  background-color: #f1f1f1;
+}
+#blog .wrap {
+  width: 33.333%;
+  float: left;
+  padding: 0 10px;
+}
+#blog .blog {
+  background-color: #fff;
+}
+#blog .blog .blog-media {
+  background-color: #222;
+  height: 200px;
+}
+#blog .blog-content {
+  padding: 20px;
+}
+#blog .blog-content .date {
+  margin-bottom: 10px;
+}
+#blog .blog-content .discription {
+  margin: 10px 0;
+}
+#blog .blog-content p {
+  color: #555555;
+}
+#blog .blog-content h3 {
+  font-size: 23px;
+  text-transform: capitalize;
+}
+#blog .blog-content a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+}
+#blog .blog-content a:hover {
+  color: #ff305b;
+}
+/* contact */
+#contact {
+  padding: 80px 0;
+}
+#contact form {
+  width: 70%;
+  margin: 0 auto;
+}
+#contact form .row:first-child .input {
+  width: 50%;
+  float: left;
+}
+#contact form .row:first-child .mr-5 {
+  padding-right: 20px;
+}
+#contact form .row:first-child .input input {
+  width: 100%;
+}
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+#contact form textarea {
+  height: 150px;
+}
+#contact form .row:not(:last-child) {
+  margin-bottom: 20px;
+}
+/* Footer */
+#footer {
+  padding: 80px 0;
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+}
+#footer a {
+  color: #ff305b;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+}
+#footer a:hover {
+  color: #fff;
+}
+#footer .icons {
+  margin-bottom: 12px;
+}
+#footer .icons a {
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+#footer .icons a:not(:last-child) {
+  margin-right: 20px;
+}
+#footer .icons a:hover {
   color: #ff305b;
 }
