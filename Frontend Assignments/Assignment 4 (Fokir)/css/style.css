@@ -459,6 +459,7 @@ button:hover {
 }
 #contact form textarea {
   height: 150px;
+  resize: vertical;
 }
 #contact form .row:not(:last-child) {
   margin-bottom: 20px;
