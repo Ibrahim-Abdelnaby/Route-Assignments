@@ -60,6 +60,45 @@
   .lg-16 {
     width: 16.666%;
   }
+  /* Navbar */
+  #header .logo {
+    float: left;
+  }
+  #header .menu {
+    float: right;
+    background-color: transparent;
+  }
+  #header .menu > *:not(:last-child) {
+    float: left;
+    margin-left: 23px;
+  }
+  /* About */
+  #about .about-img {
+    width: 80%;
+  }
+  #about .about-content {
+    float: right;
+    width: 60%;
+  }
+  #about .about-info {
+    width: 60%;
+  }
+  #about .left-info {
+    float: left;
+  }
+  #about .right-info {
+    float: right;
+  }
+  /* Portfolio */
+  #portfolio .gallary .wrap {
+    width: 33.333%;
+  }
+  #portfolio .gallary .wrap {
+    margin-bottom: 0;
+  }
+  #portfolio .gallary .top-row {
+    margin-bottom: 20px;
+  }
 }
 /* X-Large Devices */
 @media (min-width: 1280px) {
