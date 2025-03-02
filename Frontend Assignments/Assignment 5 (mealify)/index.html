@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mealify</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <!-- Reset Default Style -->
+    <link rel="stylesheet" href="/CSS/reset.css" />
+    <!-- Main CSS Style -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- Media CSS Style -->
+    <link rel="stylesheet" href="/CSS/media.css" />
+  </head>
+  <body>
+    <!-- ------------------------- Start Navbar ------------------------- -->
+    <nav>
+      <div class="container flex justify-between items-center">
+        <h5 class="logo">Mealify<span>.</span></h5>
+        <ul class="menu flex gap-2 items-center">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mode">
+          <label for="moon"><i class="fa-solid fa-moon fa-fw"></i></label>
+          <input type="radio" name="mode" id="moon" class="hide" />
+          <label for="sun"><i class="fa-solid fa-sun fa-fw"></i></label>
+          <input type="radio" name="mode" id="sun" class="hide" />
+        </div>
+      </div>
+    </nav>
+    <!-- ------------------------- End Navbar ------------------------- -->
+  </body>
+</html>

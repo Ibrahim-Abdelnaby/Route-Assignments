@@ -300,7 +300,7 @@ button:hover {
   background-color: #f1f1f1;
 }
 #numbers .number {
-  width: 100%;
+  width: 25%;
   float: left;
   text-align: center;
 }
