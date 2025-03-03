@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <!-- Reset Default Style -->
     <link rel="stylesheet" href="/CSS/reset.css" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="/CSS/all.min.css" />
     <!-- Main CSS Style -->
     <link rel="stylesheet" href="/CSS/style.css" />
     <!-- Media CSS Style -->
@@ -30,13 +32,33 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="mode">
-          <label for="moon"><i class="fa-solid fa-moon fa-fw"></i></label>
-          <input type="radio" name="mode" id="moon" class="hide" />
-          <label for="sun"><i class="fa-solid fa-sun fa-fw"></i></label>
-          <input type="radio" name="mode" id="sun" class="hide" />
+          <i id="moon" class="fa-solid fa-moon fa-fw fa-xl"></i>
+          <i id="sun" class="fa-solid fa-sun fa-fw fa-xl hide"></i>
         </div>
       </div>
     </nav>
     <!-- ------------------------- End Navbar ------------------------- -->
+    <!-- ------------------------- Start Hero Section ------------------------- -->
+    <section id="hero">
+      <div class="container flex items-center justify-between">
+        <div class="hero-text">
+          <h1>Enjoy Your Healthy Delicious Food</h1>
+          <p>
+            Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+            <br />
+            eveniet. Eum quas beatae cumque eum quaerat.
+          </p>
+          <div class="flex gap-3">
+            <button class="btn hero-btn-primary">Book a Table</button>
+            <button class="btn hero-btn-secondary">Watch a Video</button>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="/images/hero-img.png" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------- End Hero Section ------------------------- -->
+    <script src="JS/script.js"></script>
   </body>
 </html>
