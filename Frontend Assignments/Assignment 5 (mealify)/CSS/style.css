@@ -1,7 +1,7 @@
 /* ------------------------- Global Rules ------------------------- */
 :root {
   /* Colors */
-  --black-color: #212529;
+  --black-color: #37373f;
   --white-color: #fff;
   --red-color: #ce1212;
   --brown-color: #c17e1f;
@@ -17,6 +17,8 @@
   --titles-font: "Amatic SC", sans-serif;
   /* Transitions */
   --ease-out: 0.3s ease-out;
+  /* Rounded Corners */
+  --sm-rounded: 0.5rem;
 }
 body {
   /* Light Mode color Variabls */
@@ -32,7 +34,6 @@ body {
   font-family: var(--default-font);
   background-color: var(--background-color);
   color: var(--text-color);
-  height: 1000rem;
 }
 body.dark-mode {
   /* Dark Mode Color Variabls */
@@ -77,6 +78,9 @@ a {
 .items-center {
   align-items: center;
 }
+.gap-1 {
+  gap: 0.6rem;
+}
 .gap-2 {
   gap: 2rem;
 }
@@ -89,7 +93,21 @@ a {
 .hide {
   display: none;
 }
-
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title p {
+  font-size: 0.9rem;
+  color: var(--nav-text-color);
+}
+.title h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.title h2 span {
+  color: var(--text-accent-color);
+}
 /* ------------------------- Navbar ------------------------- */
 nav {
   padding: 1.563rem 0.313rem;
@@ -145,12 +163,13 @@ nav .mode i {
 }
 /* ------------------------- Hero ------------------------- */
 #hero {
-  scroll-padding-top: 95px;
   min-height: 100vh;
   background-color: var(--hero-bg-color);
 }
 #hero .container {
   min-height: inherit;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 95px;
 }
 #hero h1 {
   width: 60%;
@@ -257,4 +276,73 @@ nav .mode i {
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+/* ------------------------- Chefs ------------------------- */
+#chefs {
+  padding: 5rem 0;
+}
+#chefs .chef {
+  background-color: var(--white-color);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: var(--sm-rounded);
+  flex-basis: 100%;
+  transition: var(--ease-out);
+  position: relative;
+  overflow-x: hidden;
+}
+#chefs .chef:hover {
+  transform: scale(1.07);
+}
+#chefs .chef:hover .social {
+  right: 1rem;
+}
+#chefs .chef .social {
+  background-color: rgba(255, 255, 255, 0.302);
+  position: absolute;
+  z-index: 1;
+  right: calc((-1.2rem * 2 - (55px / 2)));
+  top: 2rem;
+  padding: 1.2rem;
+  border-radius: var(--sm-rounded);
+  transition: var(--ease-out) 0.5s;
+}
+#chefs .chef .social a {
+  color: rgba(55, 55, 63, 0.4);
+}
+#chefs .chef .social a:hover {
+  color: rgba(55, 55, 63, 0.902);
+}
+#chefs .chef .chef-img {
+  border-radius: inherit;
+  position: relative;
+}
+#chefs .chef .chef-img::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-image: url(../images/chefs/team-shape.svg);
+}
+#chefs .chef .chef-img img {
+  border-radius: inherit;
+}
+#chefs .chef-info {
+  padding: 0 1rem 1rem;
+  text-align: center;
+}
+#chefs .chef-info .chef-name {
+  font-family: var(--default-font);
+  margin-bottom: 0.25rem;
+}
+#chefs .chef-info .chef-job {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--nav-text-color);
+}
+#chefs .chef-info .chef-desc {
+  font-size: 0.9rem;
+  color: var(--nav-text-color);
+  font-style: italic;
 }
