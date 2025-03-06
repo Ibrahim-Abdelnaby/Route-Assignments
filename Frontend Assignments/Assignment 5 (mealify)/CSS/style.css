@@ -1,6 +1,6 @@
 /* ------------------------- Global Rules ------------------------- */
 :root {
-  /* Colors */
+  /* Global Colors */
   --black-color: #37373f;
   --white-color: #fff;
   --red-color: #ce1212;
@@ -11,6 +11,7 @@
   --dark-gray-bg1: #0d0d0d;
   --dark-gray-bg2: #171717;
   --dark-gray-bg3: #252525;
+  --dark-gray-bg4: #202020;
   --dark-gray-bg4: #202020;
   /* Fonts */
   --default-font: "Open Sans", sans-serif;
