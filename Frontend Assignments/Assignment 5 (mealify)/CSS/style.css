@@ -107,6 +107,9 @@ a {
 .hide {
   display: none;
 }
+.show {
+  display: block;
+}
 .title {
   text-align: center;
   margin-bottom: 2rem;
@@ -341,7 +344,9 @@ body.dark-mode #chefs {
 }
 #chefs .chef .chef-img img {
   border-radius: inherit;
+  width: 100%;
 }
+
 #chefs .chef-img svg {
   position: absolute;
   bottom: -1px;
@@ -629,12 +634,15 @@ footer .right p:not(:last-child) {
 footer .left {
   flex-grow: 1;
   flex-shrink: 2;
+  order: 1;
 }
 footer .middle {
   flex-grow: 2;
+  order: 2;
 }
 footer .right {
   flex-grow: 1;
+  order: 3;
 }
 footer p,
 footer a {
@@ -642,4 +650,67 @@ footer a {
 }
 footer h4 {
   font-size: 1.2rem;
+}
+
+/* ------------------------- sideBar ------------------------- */
+#sideBar {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(34, 34, 34, 0.7);
+  z-index: 1000;
+  transition: var(--ease-out);
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#sideBar .menu {
+  background-color: var(--white-color);
+  height: 100%;
+  width: 30vw;
+  margin-left: auto;
+  padding: 1rem;
+  animation: fadeLeft 0.5s;
+}
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(105%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#sideBar .menu,
+#sideBar .links {
+  display: flex;
+  flex-direction: column;
+}
+#sideBar .menu button {
+  align-self: flex-end;
+  margin-bottom: 2rem;
+  border: 1px solid var(--text-accent-color);
+  color: var(--text-accent-color);
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0.7;
+  cursor: pointer;
+}
+#sideBar .links {
+  padding: 0;
+  list-style: none;
+  gap: 2rem;
+}
+#sideBar .links a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+#sideBar .links a:hover {
+  color: var(--text-accent-color);
 }

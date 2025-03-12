@@ -31,12 +31,25 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="mode">
+        <div class="mode flex gap-1">
           <i id="moon" class="fa-solid fa-moon fa-fw fa-xl"></i>
           <i id="sun" class="fa-solid fa-sun fa-fw fa-xl hide"></i>
+          <i class="fa-solid fa-bars fa-fw fa-xl hide" id="burgerMenu"></i>
         </div>
       </div>
     </nav>
+
+    <aside id="sideBar" class="hide">
+      <div class="menu">
+        <button id="closeSide"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </aside>
     <!-- ------------------------- End Navbar ------------------------- -->
     <!-- ------------------------- Start Hero Section ------------------------- -->
     <section id="hero">
@@ -48,7 +61,7 @@
             <br />
             eveniet. Eum quas beatae cumque eum quaerat.
           </p>
-          <div class="flex gap-3">
+          <div class="btns flex gap-3">
             <button class="btn hero-btn-primary">Book a Table</button>
             <button class="btn hero-btn-secondary">Watch a Video</button>
           </div>
@@ -338,6 +351,23 @@
             <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
           </div>
         </div>
+
+        <div class="right">
+          <h4>Get in Touch</h4>
+          <p class="flex items-center gap-1">
+            <i class="fa-solid fa-location-dot fa-lg fa-fx"></i> A108 Adam
+            Street, New York, NY 535022
+          </p>
+          <p class="flex items-center gap-1">
+            <i class="fa-solid fa-envelope fa-lg fa-fx"></i
+            ><a href="mailto:contact@example.com"> contact@example.com</a>
+          </p>
+          <p class="flex items-center gap-1">
+            <i class="fa-solid fa-phone fa-lg fa-fx"></i
+            ><a href="tel:+155895548855"> +1 5589 55488 55</a>
+          </p>
+        </div>
+        <div class="clear-fix hide"></div>
         <div class="middle">
           <h4>Subscribe our Newsletter</h4>
           <p>
@@ -381,21 +411,6 @@
               >
             </div>
           </div>
-        </div>
-        <div class="right">
-          <h4>Get in Touch</h4>
-          <p class="flex items-center gap-1">
-            <i class="fa-solid fa-location-dot fa-lg fa-fx"></i> A108 Adam
-            Street, New York, NY 535022
-          </p>
-          <p class="flex items-center gap-1">
-            <i class="fa-solid fa-envelope fa-lg fa-fx"></i
-            ><a href="mailto:contact@example.com"> contact@example.com</a>
-          </p>
-          <p class="flex items-center gap-1">
-            <i class="fa-solid fa-phone fa-lg fa-fx"></i
-            ><a href="tel:+155895548855"> +1 5589 55488 55</a>
-          </p>
         </div>
       </div>
     </footer>
