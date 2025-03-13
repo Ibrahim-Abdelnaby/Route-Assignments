@@ -1,0 +1,347 @@
+:root {
+  --white-color: #fff;
+  --dark-color: #333;
+  --paragraph-color: #9fa3a7;
+  --ancher1-color: #27b9c2;
+  --ancher2-color: #ffc80a;
+  --square1-bg: #f7f8f9;
+  --square2-bg: #f05638;
+  --title-font: "Arvo", serif;
+  --subtitle-font: "Montserrat", sans-serif;
+  --normal-font: "Open Sans", sans-serif;
+}
+body {
+  font-family: var(--normal-font);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--dark-color);
+}
+p {
+  font-family: var(--normal-font);
+  font-size: 0.9rem;
+  color: var(--paragraph-color);
+  line-height: 1.6;
+}
+a,
+p {
+  margin-top: 1rem;
+}
+a {
+  color: var(--ancher1-color);
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subtitle {
+  font-family: var(--subtitle-font);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: var(--paragraph-color);
+  margin-bottom: 1rem;
+}
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+p.flag {
+  font-size: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  color: var(--white-color);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+/* Grid */
+main.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(4, minmax(100px, auto));
+  min-height: 100vh;
+}
+main.grid > :nth-child(1) {
+  grid-column: 1/3;
+  background-color: var(--white-color);
+}
+main.grid > :nth-child(2) {
+  grid-column: 3/-1;
+  grid-row: 1/2;
+}
+main.grid > :nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+main.grid > :nth-child(4) {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+main.grid > :nth-child(5) {
+  grid-column: 4/-1;
+  grid-row: 2/4;
+}
+main.grid > :nth-child(6) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+main.grid > :nth-child(7) {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+main.grid > :nth-child(8) {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+main.grid > :nth-child(9) {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+main.grid > :nth-child(10) {
+  grid-column: 3/-1;
+  grid-row: 4/5;
+}
+/* Iphone */
+.iphone {
+  padding: 5rem 8rem;
+  padding-bottom: 0;
+}
+.iphone .iphone-txt {
+  margin-top: -5rem;
+}
+.iphone .iphone-img {
+  align-self: flex-end;
+  width: 250px;
+}
+.iphone .iphone-img img {
+  width: 100%;
+}
+/* Web Title */
+.web-title {
+  background-color: var(--square1-bg);
+}
+.web-title h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 1.3;
+}
+.web-title a {
+  text-decoration: underline;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+/* Keyboard */
+.keyboard,
+.game-ourpasion {
+  background-color: var(--square2-bg);
+  padding: 5rem;
+}
+.keyboard .keyboard-img {
+  width: 300px;
+}
+.keyboard h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--white-color);
+}
+.keyboard a {
+  color: var(--ancher2-color);
+}
+/* monitor */
+.monitor {
+  background-color: var(--white-color);
+  padding: 5rem 8rem;
+  padding-bottom: 0;
+  position: relative;
+}
+.monitor .monitor-txt {
+  justify-content: space-between;
+}
+.monitor .monitor-img {
+  position: absolute;
+  left: -5.6rem;
+  bottom: 0;
+  width: 350px;
+  object-fit: contain;
+}
+.monitor .monitor-desc {
+  width: 50%;
+}
+.monitor .monitor-desc p {
+  margin-bottom: 1rem;
+}
+/* Game Ourpasion */
+.game-ourpasion {
+  background-color: #f7f8f9;
+}
+.game-ourpasion .game-ourpasion-img {
+  width: 250px;
+  position: relative;
+  left: -25px;
+  margin-bottom: 1rem;
+}
+.game-ourpasion a {
+  margin-top: 2rem;
+}
+/* Tablet */
+.tablet {
+  background-color: #93b6b7;
+  position: relative;
+}
+.tablet .flag {
+  background-color: var(--square2-bg);
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+.tablet .bg-overlay {
+  padding: 4rem;
+  padding-bottom: 0;
+  height: 100%;
+  background-image: url("../images/r3-c2-bg.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.tablet .bg-overlay h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  margin-bottom: 2rem;
+}
+.tablet .bg-overlay .tablet-img {
+  transform: translateX(-100px);
+}
+/* Twitter */
+.twitter {
+  background-color: #38d5f4;
+}
+.circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: rgba(34, 34, 34, 0.05);
+}
+.circle img {
+  width: 70%;
+  object-fit: contain;
+}
+.circle h2 {
+  text-align: center;
+  color: var(--white-color);
+}
+/* slogan */
+.slogan .flag {
+  background-color: #7bc424;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+/* display */
+.display {
+  background-color: #2c2c2c;
+}
+.display .display-img {
+  width: 300px;
+  position: relative;
+  left: -25px;
+}
+.display h2 {
+  color: var(--white-color);
+}
+/* Icloud */
+.icloud {
+  background-color: #8f76bc;
+}
+.icloud .circle {
+  background-color: #8166b0;
+  width: 373px;
+  height: 373px;
+}
+.icloud .icloud-img {
+  width: 70%;
+}
+.icloud .icloud-img img {
+  width: 100%;
+  margin-bottom: -1.5rem;
+}
+.icloud .flag {
+  background-color: #8b72b6;
+  border-radius: 50px;
+  padding: 0.25rem 1rem;
+  font-size: 0.6rem;
+  position: relative;
+  padding-left: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+.icloud .flag::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../images/r2-c4-flag.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+}
+.icloud .meet {
+  font-weight: 700;
+  font-family: var(--subtitle-font);
+  color: var(--white-color);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+.icloud h2 {
+  margin-top: 1rem;
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.icloud .disc {
+  text-align: center;
+  color: var(--white-color);
+  padding: 0 4.8rem;
+  margin-bottom: 2rem;
+}
+.icloud .btn {
+  background-color: #ffc80a;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
