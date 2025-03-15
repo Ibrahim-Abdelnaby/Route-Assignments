@@ -1,0 +1,193 @@
+.deep-menu {
+  display: none;
+  transition: 0.3s ease-out;
+}
+.deep-dropdown:hover .deep-menu {
+  display: block;
+}
+.deep-menu a.sub-item {
+  color: #fff;
+  text-decoration: none;
+}
+.deep-menu li:hover {
+  background-color: #2b3035;
+}
+.navbar-nav .nav-link.active {
+  position: relative;
+}
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 12px;
+  width: calc(100% - (12px * 2));
+  height: 2px;
+  background-color: #fff;
+}
+.nav-link {
+  --bs-nav-link-color: #acacac;
+  color: var(--bs-nav-link-color);
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  --bs-nav-link-color: #ddd;
+  color: var(--bs-nav-link-color);
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  --bs-navbar-nav-link-padding-x: 12px;
+  padding-right: var(--bs-navbar-nav-link-padding-x);
+  padding-left: var(--bs-navbar-nav-link-padding-x);
+}
+/* Hero Section */
+#hero .container,
+#hero .container .wrap,
+#hero .bg-overlay {
+  min-height: inherit;
+}
+#hero {
+  background-image: url("../images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hero .bg-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#hero .animated-txt::after {
+  content: "|";
+  animation: rewrite 4s ease-out infinite;
+}
+@keyframes rewrite {
+  0% {
+    content: "|";
+  }
+  2.33% {
+    content: "F|";
+  }
+  4.65% {
+    content: "Fr|";
+  }
+  6.98% {
+    content: "Fre|";
+  }
+  9.30% {
+    content: "Free|";
+  }
+  11.63% {
+    content: "Freel|";
+  }
+  13.95% {
+    content: "Freela|";
+  }
+  16.28% {
+    content: "Freelan|";
+  }
+  18.60% {
+    content: "Freelanc|";
+  }
+  20.93% {
+    content: "Freelance|";
+  }
+  23.26% {
+    content: "Freelancer|";
+  }
+  25.58% {
+    content: "Freelance|";
+  }
+  27.91% {
+    content: "Freelanc|";
+  }
+  30.23% {
+    content: "Freelan|";
+  }
+  32.56% {
+    content: "Freela|";
+  }
+  34.88% {
+    content: "Freel|";
+  }
+  37.21% {
+    content: "Free|";
+  }
+  39.53% {
+    content: "Fre|";
+  }
+  41.86% {
+    content: "Fre|";
+  }
+  44.19% {
+    content: "Fr|";
+  }
+  46.51% {
+    content: "F|";
+  }
+  48.84% {
+    content: "|";
+  }
+  51.16% {
+    content: "|";
+  }
+  53.49% {
+    content: "|";
+  }
+  55.81% {
+    content: "D|";
+  }
+  58.14% {
+    content: "De|";
+  }
+  60.47% {
+    content: "Dev|";
+  }
+  62.79% {
+    content: "Deve|";
+  }
+  65.12% {
+    content: "Devel|";
+  }
+  67.44% {
+    content: "Develo|";
+  }
+  69.77% {
+    content: "Develop|";
+  }
+  72.09% {
+    content: "Develope|";
+  }
+  74.42% {
+    content: "Developer|";
+  }
+  76.74% {
+    content: "Develope|";
+  }
+  79.07% {
+    content: "Develop|";
+  }
+  81.40% {
+    content: "Develo|";
+  }
+  83.72% {
+    content: "Devel|";
+  }
+  86.05% {
+    content: "Deve|";
+  }
+  88.37% {
+    content: "Dev|";
+  }
+  90.70% {
+    content: "De|";
+  }
+  93.02% {
+    content: "D|";
+  }
+  95.35% {
+    content: "|";
+  }
+  97.67% {
+    content: "|";
+  }
+  100% {
+    content: "|";
+  }
+}
