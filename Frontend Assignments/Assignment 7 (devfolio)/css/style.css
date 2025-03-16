@@ -1,3 +1,7 @@
+body {
+  background-color: #f5f5f5;
+  height: 500vh;
+}
 .deep-menu {
   display: none;
   transition: 0.3s ease-out;
@@ -49,6 +53,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #hero .bg-overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -190,4 +195,36 @@
   100% {
     content: "|";
   }
+}
+/* About */
+#about {
+  margin-top: 5rem;
+}
+#about .progress {
+  height: 10px;
+}
+#about .skill p {
+  margin-bottom: 0.5rem;
+}
+#about .profile-details p {
+  margin: 0;
+}
+#about .right h2 {
+  position: relative;
+  width: fit-content;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+#about .right h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 3px;
+  background-color: #0d6efd;
+}
+#about .left a {
+  color: #2b3035;
+  text-decoration: none;
 }
